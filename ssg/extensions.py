@@ -8,8 +8,3 @@ def load_module(directory, name):
     importlib.import_module(name)
     sys.path.pop(0)
 
-
-    def load_directory(directory):
-        for path.rglob('*.py') in directory:
-            load_module(directory.as_posix(), path.stem)
-
